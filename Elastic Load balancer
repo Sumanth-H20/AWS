@@ -2,7 +2,7 @@ First launch 2 or 3 instances that need to be added to target groups.
 
 Create the target groups
 	1) Provide the target type to instances and provide the name
-	
+
 	2) Provide protocol as HTTP and VPC details (VPC should be same where your instances are hosted)
 	
 	
