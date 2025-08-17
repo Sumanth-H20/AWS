@@ -1,0 +1,21 @@
+bastion hosts acts as jump server to connect to to the servers which hosted in a private subnet.
+
+in AWS we can create a instance in a public subnet to make use of bastion service.
+
+launch a instance in public subnet first for bastion.
+
+launch a private instance in private subnet
+
+now in bastion server create a new file using vi editor and add the content of private instance key-pair pem file.
+ex: vi testserver.pem
+
+Provide the permission to file using ch command
+
+Chmod 400 test-server.pem
+
+Run the below to command to connect to instance
+ 
+Ssh ec2-user@$privateip$ -i testserver.pem
+
+note: this is amazon linux machine if you are using ubuntu you should mention ubuntu instead of ec2-user.
+<img width="907" height="449" alt="image" src="https://github.com/user-attachments/assets/7b6e51fa-1ddd-4d7e-ae8a-33086342aa51" />
