@@ -1,0 +1,35 @@
+First launch 2 or 3 instances that need to be added to target groups.
+
+Create the target groups
+	1) Provide the target type to instances and provide the name
+	
+	2) Provide protocol as HTTP and VPC details (VPC should be same where your instances are hosted)
+	
+	
+	3) Add the created instances to target groups 
+	Select the instance -- include as pending below
+	
+	
+	Create the load balancer
+	Choose the load balancer as application load balancer
+	
+	Provide the name and select options
+	
+	
+	
+	Then choose the vpc target group and create new security group and configure as below
+	
+	
+	
+	Now select the target groups in listener 
+	
+	
+	Create load balancer.
+	
+	Try access using the load balancer Dns name
+	
+	
+	
+	
+	
+	In the ec2 machine install any web server and provide these content in the html file.
